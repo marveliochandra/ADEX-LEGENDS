@@ -1,0 +1,1094 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  position: fixed;
+  background: black;
+  height: 98px;
+  width: 100%;
+  z-index: 10;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 98px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+label.logo:hover {
+  opacity: 0.8;
+  color: #ff3535;
+}
+nav ul {
+  float: Right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 98px;
+  margin: 0 24px;
+}
+nav ul li a {
+  color: white;
+  font-size: 30px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a.active,
+nav a:hover {
+  color: #ff4547;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 98px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.first {
+  margin-top: -20vh;
+}
+
+#ticket {
+  background-color: #ff4547;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 30px;
+  line-height: 45px;
+  background-color: #fe0002;
+}
+#ticket:hover {
+  color: #fff;
+  background-color: #ff3535;
+}
+@media (max-width: 798px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .checkbtn:hover,
+  .checkbtn:active {
+    opacity: 0.8;
+  }
+  nav ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    top: 80px;
+    right: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: #ff4547;
+    transition: 0.5s;
+  }
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+#content {
+  padding-top: 100px;
+  background: url(Asset/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+#logo {
+  font-family: "Teko", sans-serif;
+  color: #fff;
+  padding: 2rem 20%;
+  font-size: 20rem;
+  font-weight: bold;
+  margin-bottom: -200px;
+}
+
+#legends {
+  padding: 2rem 22.5%;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#text-desc-first-inner-content {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2;
+  padding: 0rem 15rem;
+  color: #fff;
+  max-width: 80rem;
+  margin-right: 5%;
+  text-align: center;
+}
+
+#button {
+  margin-top: 1rem;
+  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
+}
+
+#play-now-button {
+  margin-left: 15%;
+  background: #da292a;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #fff;
+}
+
+#play-now-button:hover {
+  background: #ff3535;
+}
+
+#watch-trailer-button:hover {
+  background: #ff3535;
+}
+#watch-trailer-button {
+  margin-left: 10%;
+  background: #da292a;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #fff;
+}
+
+#second-content {
+  background: url(Asset/apex-hero-medium-saviors-homepage-season-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 55vh;
+}
+
+#let-no-one-fall {
+  font-family: "Poppins";
+  font-style: bold;
+  font-size: 4rem;
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+  margin-left: 50%;
+  padding-top: 5vh;
+}
+
+@media (max-width: 1200px) {
+  #let-no-one-fall {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #desc-second-let-no-one-fall {
+    text-align: center;
+  }
+}
+
+#desc-second-let-no-one-fall {
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 2%;
+  padding-bottom: 2rem;
+}
+
+#third-content {
+  background: url(Asset/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+#latest-news {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#register-wallpaper {
+  background: url(Asset/wallpaper-merah.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#sinkup {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  color: white;
+}
+
+.second-button2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: rgb(33, 31, 31);
+  border-color: rgb(33, 31, 31);
+  transform: translate(50%);
+  margin-bottom: 100px;
+}
+
+.second-button2:hover {
+  background-color: #da292a;
+  border-color: #da292a;
+}
+
+.input-field .validate {
+  padding: 20px;
+  font-size: 20px;
+  font-family: Poppins;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 15px;
+  color: #bfc0c0;
+  background: #262626;
+  outline: none;
+}
+
+.second-button {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 40px;
+  background: #14f195;
+}
+
+.second-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.second-button:active {
+  background: linear-gradient(145deg, #222222, #292929);
+  box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+  border: none;
+  outline: none;
+}
+
+#sign-in-text {
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 50px;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 30px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+#join {
+  text-align: right;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+
+.footer {
+  background-color: #252525;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#gambar-1 {
+  width: 354px;
+  height: 201px;
+}
+
+.news {
+  width: 354px;
+  height: 619px;
+  background-color: #161616;
+  border-bottom: 5px solid #da292a;
+  margin: 1rem;
+}
+
+.news:hover {
+  filter: drop-shadow(8px 8px 10px #696969);
+}
+
+#desc-1-news {
+  color: #ffff;
+  margin: 1rem;
+}
+
+#saviour {
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+
+#saviour-desc {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fourth-content {
+  background-image: url(Asset/apex-section-bg-beige-texture-xl.jpg.adapt.1456w.jpg);
+  background-size: 100%;
+  text-align: right;
+}
+
+.squad {
+  width: 32rem;
+  height: 100%;
+}
+
+.container-img {
+  padding: 2rem;
+  width: 50%;
+}
+
+.legends-change-text {
+  text-align: right;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.desc-legends-change-text {
+  font-size: 2rem;
+  font-weight: 400;
+  justify-content: right;
+  padding-bottom: 1rem;
+}
+
+.legends-change-the-game {
+  margin-top: -30rem;
+  margin-right: 5rem;
+  margin-left: 50%;
+}
+
+#meet-legends {
+  color: #fff;
+  font-weight: 300;
+}
+
+.meet-the-legends {
+  font-family: "Poppins";
+  font-weight: 400;
+  background-color: #da292a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 10rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5;
+}
+
+.meet-the-legends:hover {
+  background-color: #ff3838;
+}
+
+@media (max-width: 1200px) {
+  .fourth-content {
+    background-image: url(Asset/apex-section-bg-beige-texture-xl.jpg.adapt.1456w.jpg);
+    background-size: 100%;
+    text-align: right;
+  }
+  .legends-change-the-game {
+    margin-top: -30rem;
+    margin-right: 5rem;
+    margin-left: 50%;
+  }
+
+  #meet-legends {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .meet-the-legends {
+    text-align: center;
+  }
+}
+.container-maps-content{
+  padding-top:90px;
+}
+
+.bfirst-container {
+  padding-top:100px;
+  background-image: url(Asset/wallpaper-merah.jpg);
+}
+
+#blogo-adex-img {
+  padding-top: 50px;
+  margin: auto;
+  display: block;
+  margin-left: 47%;
+}
+
+@media (max-width: 1024px) {
+  #blogo-adex-img {
+    margin: auto;
+    display: block;
+  }
+}
+
+.bmeet-the-legends-text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffff;
+}
+
+.b-meet-the-legends-text-desc {
+  text-align: center;
+  color: #ffff;
+  font-weight: 400;
+  line-height: 45px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.bflex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .bflex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.legend-container {
+  text-align: center;
+  background-image: url(Asset/apex-section-bg-beige-texture-xl.jpg.adapt.1456w.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ash {
+  width: 300px;
+}
+.horizon {
+  width: 300px;
+}
+
+.gibraltar {
+  width: 300px;
+}
+
+.fuse {
+  width: 300px;
+}
+
+.text-legend {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.legend-desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.cflex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+
+@media (max-width: 1200px) {
+  .cflex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.ash:hover {
+  width: 330px;
+  filter: drop-shadow(8px 5px 10px #000);
+  cursor: pointer;
+}
+
+.video {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(Asset/apex-tout-small-homepage-newcastle-5x2-xl.jpg.adapt.crop5x2.1920w.jpg);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.first-maps-container{
+  background-image: url(Asset/wallpaper-merah.jpg);
+  text-align: center;
+  padding-top: 10px;
+}
+
+.discover-the-maps{
+  margin-top: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;  
+}
+
+.discover-the-maps-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+color: #FFFFFF;
+padding: 50px;
+
+}
+
+.first-map-container-button-ul{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.button-maps-1{
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  border: 3px solid #fff;
+  margin-top: 50px;
+  margin-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button-maps-2{
+  margin-left: 50px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  border: 3px solid #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button-maps-2:hover{
+  filter: drop-shadow(8px 5px 10px #000);
+}
+
+.button-maps-1:hover{
+  filter: drop-shadow(8px 5px 10px #000);
+}
+
+.first-map-container-button{
+  padding-bottom: 50px;
+}
+
+.arenas{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 75px;
+color: #FFFFFF;
+text-align: center;
+padding-top:50px;
+}
+
+.arenas-container{
+  background-color: #161616;
+  justify-content: center;
+  text-align: center;
+}
+
+.arenas-desc{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.button-maps {
+  font-family: "Poppins";
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: solid white 1px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.button-maps:hover{
+  border-bottom: solid #FF4547 3px;
+  color: #FF4547;
+}
+
+.maps-img{
+  width: 100%;
+}
+
+.maps-img:hover{
+  width: 100%;
+  transform: scale(1.1);
+}
+
+#battle-royale-container{
+  background-color: #161616;
+  justify-content: center;
+  text-align: center;
+}
+
+.maps-bawah{
+  background-image:url(Asset/wallpaper-merah.jpg) ;
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
+  margin-top: -50px;
+  padding-bottom: 100px;
+}
+
+#play-for-free-maps{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 75px;
+text-align: center;
+padding-bottom: 50px;
+}
+
+#play-for-free-maps-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+padding-bottom: 50px;
+}
+
+#play-for-free-maps-btn{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+background: #DA292A;
+border-radius: 10px;
+padding-left: 25px;
+padding-right: 25px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #fff;
+}
+
+#play-for-free-maps-btn:hover{
+  background:#ff3535;
+}
+
+
+#myVideo {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(20%);
+  object-fit: contain;
+}
+@media (max-width: 1500px){
+  #first-container-desc-about{
+    opacity: 0;
+  }
+  #logo-adex-legend-about-us{
+    opacity: 0;
+  }
+  #first-container-about-button-play-now{
+    opacity: 0;
+    display: none;
+  }
+  .content-about-us{
+    margin-top:-14rem;
+  }
+}
+
+.content-about-us {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo-adex-legend-about-us{
+  margin-top: 20px;
+  width: 134px;
+  height: 134px;
+}
+#adex-about{
+font-family: "Teko", sans-serif;
+color: #fff;
+font-size: 10rem;
+font-weight: bold;
+text-transform: uppercase;
+margin-top: 1rem
+}
+
+#legend-about{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: -4rem
+}
+
+#first-container-desc-about{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+margin-left: 50px;
+margin-right: 50px;
+padding-bottom: 50px;
+}
+
+#first-container-about-button-play-now{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+color: #FFFFFF;
+border: 3px solid #fff;
+padding-right: 50px;
+padding-left: 50px;
+}
+
+#first-container-about-button-play-now:hover{
+  background-color: #ff3535;
+  border: 3px solid #ff3535;
+}
+
+
+
+.second-content-about{
+  background-image: url(Asset/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  
+}
+
+.second-content-about-image{
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5rem;
+}
+
+#desc-container-about{
+  margin-top: -0.45rem;
+  border-top: 3px solid #FF0000;
+  background-color: #252525;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+#the-legends-about{
+  font-weight: 700;
+font-size: 50px;
+line-height: 75px;
+text-align: center;
+}
+
+#the-legends-about-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+padding-left: 10px;
+padding-right:10px;
+padding-top: 15px;
+padding-bottom: 50px;
+}
+
+#squad-image-about{
+  width: 100%;
+  margin-top: 100px;
+}
+
+#button-see-the-roster{
+  background-color: #FF4547;
+  color: #fff;font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius:30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#button-see-the-roster:hover{
+  background-color: #ff3535;
+  filter: drop-shadow(8px 8px 10px #000);
+}
+
+#your-squad{
+  text-align: center;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 150px;
+text-transform: uppercase;
+}
+
+#your-squad-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 75px;
+text-align: center;
+}
+
+.about-page{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .about-page {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+#logo-border{
+  text-align: center;
+  width: 80%;
+}
+
+.image-border-adex{
+  text-align: center;
+  margin-top:20px;
+
+}
+.news-abt {
+  width: 354px;
+  height: 619px;
+  background-color: #161616;
+  border-bottom: 5px solid #da292a;
+  margin: 1rem;
+  margin-top:50px;
+}
+
+.abt-text{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 75px;
+text-align: center;
+margin-top:20px;
+}
+
+.abt-text-desc-a{
+  margin-top:20px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+padding-left: 150px;
+padding-right: 150px;
+}
+
+#your-squad{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 150px;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#your-squad-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 50px;
+line-height: 75px;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
+}
+
+.squad-about-img{
+  width: 100%;
+}
